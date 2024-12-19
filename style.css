@@ -1,0 +1,90 @@
+/* Dark-blue-color 000532 
+   Yellow-color fcff00
+   Light-blue-color 0614cb
+   Dark-color 000913*/
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+   @font-face {
+       font-family: 'Hacen Saudi Arabia';
+       src: url('fonts/Hacen\ Saudi\ Arabia.ttf') format('truetype'); /* تأكد من استخدام المسار الصحيح */
+   }   
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    background-color: #000913;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.arabic{
+    font-family: 'Hacen Saudi Arabia';
+}
+.nav{
+    background-color: #000532;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.lside img{
+    width: 120px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.main-container{
+    padding: 20px;
+    position: relative;
+    top: 10%;
+    background-color: #000532;
+    text-align: center;
+    border-radius: 25px;
+    width: 80%;
+}
+.h6{
+    color: #fcff00;
+    font-weight: bold;
+    font-size: 50px;
+}
+.main-img{
+    width: 30%;
+    border-radius: 5%;
+}
+.btn{
+    margin: 20px 0px;
+    background-color: #0614cb;
+    font-size: 60px;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-img {
+        width: 60%;
+        border-radius: 25px;
+    }
+    .btn{
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    }
+  }
+  
