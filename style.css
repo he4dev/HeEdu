@@ -12,12 +12,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}  
 body{
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
     background-color: #000913;
     color: white;
+}
+.desc{
+    direction: rtl;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Hacen Saudi Arabia';
 }
 .link{
     text-decoration: none;
@@ -27,36 +35,55 @@ body{
     font-family: 'Hacen Saudi Arabia';
 }
 .nav{
-    background-color: #000532;
+    background-color: #000913;
     height: 60px;
+    top: 0%;
     display: flex;
+    z-index: 1000;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.nav.scrolled{
+    background-color: #000532;
+    box-shadow: 0 4px 50px #fcff00;
 }
 .lside img{
     width: 120px;
+    fill: "red";
 }
 .main{
     display: flex;
     justify-content: center;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     width: 100%;
 }
 .main-container{
     padding: 20px;
+    border-radius: 90px;
     position: relative;
-    top: 10%;
+    margin-top: 10vh;
+    padding-top: 60px;    
     background-color: #000532;
     text-align: center;
-    border-radius: 25px;
     width: 80%;
+    transition: all 0.6s ease-in;
 }
+.main-container.at-download {
+    box-shadow: 0 0 20px #fcff00;
+  }
 .h6{
     color: #fcff00;
     font-weight: bold;
     font-size: 50px;
+}
+.logo-span{
+    color: #fcff00;
+    font-family: "Montserrat", sans-serif;
 }
 .main-img{
     width: 30%;
@@ -71,12 +98,55 @@ body{
     height: 100px;
     border-radius: 25px;
 }
+.download-container{
+    align-items: center;
+    direction: rtl;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.download-cards{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.download-card{
+    margin: 50px 0px;
+    background-color: #000532;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px ;
+    transition: all 0.6s ease;
+}
+.download-card.at-download {
+    box-shadow: 0 0 20px #fcff00;
+}
+.download-card *{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.logo-download{
+    width: 70px;
+}
+.download-btn{
+    bottom: 0%;
+    text-decoration: none;
+    color: #000913;
+    background-color: #fcff00;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
 
 
-
-
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .main-img {
         width: 60%;
         border-radius: 25px;
@@ -85,6 +155,9 @@ body{
     font-size: 40px;
     width: 250px;
     height: 70px;
+    }
+    .download-cards{
+        width: 100%;
     }
   }
   

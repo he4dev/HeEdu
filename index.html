@@ -4,26 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="512.png">
     <title>HeEdu</title>
 </head>
 <body>
     <div class="nav">
         <div class="rside">
-            <a href="https://bit.ly/49KayM5" class="link nav-text arabic">تحميل</a>
+            <a href="#download" class="link nav-text arabic">تحميل</a>
         </div>
         <div class="lside">
             <img src="logo.png" alt="">
         </div>
     </div>
     <div class="main">
-        <div class="main-container">
+        <div class="main-container div-effects">
             <h1 class="arabic">برنامج</h1>
-            <span class="h6">HeEdu V10.0</span> <br>
-            <img class="main-img" src="512.png" alt="">
-            <p>تحديث بتاريخ 15/12/2024</p>
-            <a href="https://bit.ly/49KayM5" class="link arabic btn">تحميــــل</a>
+            <span class="h6">HeEdu</span> <br>
+            <p class="desc">تطبيق <span class="logo-span">HeEdu</span> هو منصتك التعليمية المتكاملة لتخصص نظم المعلومات، بيقدملك كل اللي تحتاجه علشان تتفوق وتذاكر بسهولة وفعالية.
+             
+                <br>
+                ✅ مذكرات دراسية شاملة ومنظمة لكل المواد.
+                <br>
+                🎥 فيديوهات شرح مبسطة بتغطي المنهج من A to Z.
+                <br>
+                📝 امتحانات سابقة وتدريبات علشان تجهز نفسك كويس لأي اختبار.
+                <br>
+                سواء بتذاكر لأول مرة أو بتراجع قبل الامتحان، <span class="logo-span">HeEdu</span> هيساعدك توصل للمعلومة بسرعة وبطريقة سهلة.
+            </p>
+                <img class="main-img" src="512.png" alt="">
+                
+            <!-- <a href="https://bit.ly/3VJmtEe" class="link arabic btn">تحميــــل</a> -->
+
+        </div>
+        
+
+        <div class="download-container" id="download">
+          <h1 class="arabic">التحميل</h1>
+          <div class="download-cards">
+            <div class="download-card div-effects">
+                <h1>Android</h1>
+                <img class="logo-download" src="android.png" alt="">
+                <p class="arabic">تقدر تحمل تطبيق <span class="logo-span">HeEdu</span> للاندرويد</p>
+                <a id="android-link" class="download-btn arabic" href="#">تحميل</a>
+            </div>
+            <div class="download-card div-effects">
+                <h1>IOS & Web</h1>
+                <div class="download-img-logo">
+                    <img class="logo-download" src="windows.png" alt="">
+                    <img class="logo-download" src="apple.png" alt="">
+                </div>
+                <p class="arabic">تقدر تفتح برنامج <span class="logo-span">HeEdu</span> للايفون او للويندوز</p>
+                <a id="ios-link" class="download-btn arabic" href="#">فتح</a>
+            </div>
+          </div>
+
         </div>
         
     </div>
+    <script>
+        // تعيين الروابط
+        const androidLink = "https://github.com/he4dev/heeduapk/raw/refs/heads/master/heedu.apk";
+        const iosLink = "https://www.ios.com";
+
+        // تعيين الروابط لعناصر <a> 
+        document.getElementById("android-link").href = androidLink;
+        document.getElementById("ios-link").href = iosLink;
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
